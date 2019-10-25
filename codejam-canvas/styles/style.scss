@@ -1,0 +1,35 @@
+@import './normalize.scss';
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.header {
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+
+  .inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+
+  &__menu {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  &__title {
+    margin-right: auto;
+    font-weight: bold;
+  }
+
+  &__points {
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+
+
+}
