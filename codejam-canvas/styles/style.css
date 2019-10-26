@@ -346,6 +346,55 @@ template {
   margin: 0 auto;
 }
 
+.panel {
+  width: 230px;
+  -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.panel--item {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 35px;
+}
+
+.panel--item:hover {
+  cursor: pointer;
+  background-color: #eee;
+}
+
+.panel--item__title {
+  margin-left: 30px;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: rgba(0, 0, 0, 0.541327);
+}
+
+.panel--item .icon {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
 .header {
   -webkit-box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
           box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
@@ -376,5 +425,45 @@ template {
 .header__points {
   cursor: pointer;
   margin-right: 10px;
+}
+
+.main {
+  position: relative;
+  height: 93vh;
+  width: 100%;
+}
+
+.main__instruments {
+  position: absolute;
+  top: 10%;
+  left: 1%;
+}
+
+.main__colors {
+  position: absolute;
+  top: 55%;
+  left: 1%;
+}
+
+.main__colors .current-color {
+  background-color: #C4C4C4;
+}
+
+.main__colors .prev-color {
+  background-color: #41F795;
+}
+
+.main__colors .red {
+  background-color: red;
+}
+
+.main__colors .blue {
+  background-color: blue;
+}
+
+.main__switcher {
+  position: absolute;
+  top: 10%;
+  right: 1%;
 }
 /*# sourceMappingURL=style.css.map */

@@ -5,6 +5,50 @@
   margin: 0 auto;
 }
 
+.panel {
+  width: 230px;
+  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &--item {
+    padding-left: 20px;
+
+    display: flex;
+    align-items: center;
+    height: 35px;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #eee;
+    }
+
+    &__title {
+      margin-left: 30px;
+      text-align: center;
+      font-family: Roboto;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+
+      display: flex;
+      align-items: center;
+
+      color: rgba(0, 0, 0, 0.541327);
+    }
+
+    .icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      border: 1px solid black;
+    }
+  }
+}
+
 .header {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.3);
 
@@ -30,6 +74,44 @@
     margin-right: 10px;
   }
 
+}
 
+.main {
+  position: relative;
+  height: 93vh;
+  width: 100%;
 
+  &__instruments {
+    position: absolute;
+    top: 10%;
+    left: 1%;
+  }
+
+  &__colors {
+    position: absolute;
+    top: 55%;
+    left: 1%;
+
+    .current-color {
+      background-color: #C4C4C4;
+    }
+
+    .prev-color {
+      background-color: #41F795;
+    }
+
+    .red {
+      background-color: red;
+    }
+
+    .blue {
+      background-color: blue;
+    }
+  }
+
+  &__switcher {
+    position: absolute;
+    top: 10%;
+    right: 1%;
+  }
 }
