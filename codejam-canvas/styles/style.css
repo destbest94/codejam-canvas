@@ -469,9 +469,14 @@ template {
   overflow: scroll;
 }
 
+.main .rs {
+  visibility: hidden;
+}
+
 .main .canvas {
   display: inline-block;
   position: absolute;
+  z-index: -1;
   width: 512px;
   height: 512px;
   top: 50%;
